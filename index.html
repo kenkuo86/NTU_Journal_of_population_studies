@@ -1,28 +1,140 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <style>
+        .bg-cover{
+            background-size: cover;
 
+        }
+    </style>
     <title>人口學刊網站 - 國立台灣大學人口與性別研究中心</title>
-  </head>
-  <body>
-    <!-- Navbar -->
+</head>
 
+<body>
+    <!-- Navbar -->
+    <!-- Jimmy我只是先丟一個Navbar在這邊我比較方便看版面大概的樣子~~你之後再把它刪掉就好~~ -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 
     <!-- main body -->
-
+    <div class="container bg-light mt-3 border">
+        <!-- title -->
+        <div class="text-center p-3">
+            <h1>最新出版消息</h1>
+            <hr>
+            <h2 class="mb-0">第56期目錄</h2>
+            <small>2018.06出刊</small>
+        </div>
+        <!-- main part -->
+        <div class="row mt-3">
+            <!-- image -->
+            <div class="col-md-6 mb-3">
+                <img class="img-fluid" src="./assets/cover.jpg" alt="期刊封面">
+            </div>
+            <!-- index -->
+            <div class="col-md-6 text-center">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>研究論文</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p>臺灣日治時期的家庭結構與分家現象－新竹四個街庄的分析</p>
+                            <small>——李俊豪(Chun-Hao Li)；楊文山(Wen-Shan Yang)；莊英章(Ying-Chang Chuang)</small>
+                        </li>
+                        <li class="list-group-item">
+                            <p>臺灣樂齡學習需求人口與樂齡學習中心資源配置差異分析：應用空間群聚與地理可近性方法評估</p>
+                            <small>——蔡明璋(Ming-Chang Tsai)；曾明性(Ming-Hseng Tseng)；吳慧卿(Hui-Ching Wu)</small>
+                        </li>
+                        <li class="list-group-item">
+                            <p>高齡家庭與高齡照顧者的特性：2010年人口與住宅普查資料的應用</p>
+                            <small>——劉千嘉(Chien-Chia Liu)</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>學術活動紀實</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p>衛生福利政策專題討論「我國人口政策與少子化因應策略之省思－移民政策的推動與再省思」學術活動紀實</p>
+                            <small>——陳再晉；鐘珮純；陳冠文；林廷育</small>
+                        </li>
+                        <li class="list-group-item">
+                            <p>「跨國婚姻的組成差異與生育影響：南韓與臺灣經驗」演講紀實</p>
+                            <small>——呂采穎</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>書評</h3>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <p>Book reviews: I'm Migrant: New Perspectives in the Studies of Oversea Chinese</p>
+                            <small>——鄭得興(James Cheng)</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
