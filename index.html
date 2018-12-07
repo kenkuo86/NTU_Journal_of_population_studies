@@ -10,13 +10,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
 
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+
+
     <!-- Font awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <style>
         .bg-cover{
             background-size: cover;
-
+        }
+        .bg-purple{
+            background-color: #6b3091;
+        }
+        *{
+            font-family: 'Noto Serif TC', serif;
         }
 
         .logo{
@@ -94,7 +102,7 @@
     </nav>
 
     <!-- main body -->
-    <div class="container bg-light my-3 pb-3 border">
+    <div class="container my-3 pb-3">
         <!-- title -->
         <div class="text-center p-3">
             <h1>最新出版消息</h1>
@@ -110,9 +118,10 @@
             </div>
             <!-- index -->
             <div class="col-md-6 text-center">
+
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header bg-purple" id="headingOne">
+                        <div class="card-header bg-purple text-white" id="headingOne">
                             <h3 class="mb-0">
                                 <button class="btn btn-link text-white" type="button" style="text-decoration: none;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">研究論文</button>
                             </h3>
@@ -181,6 +190,7 @@
             </div>
 <!--                 <div class="card">
                     <div class="card-header">
+
                         <h3>研究論文</h3>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -199,7 +209,7 @@
                     </ul>
                 </div>
                 <div class="card mt-3">
-                    <div class="card-header">
+                    <div class="card-header bg-purple text-white">
                         <h3>學術活動紀實</h3>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -214,7 +224,7 @@
                     </ul>
                 </div>
                 <div class="card mt-3">
-                    <div class="card-header">
+                    <div class="card-header bg-purple text-white">
                         <h3>書評</h3>
                     </div>
                     <ul class="list-group list-group-flush">
