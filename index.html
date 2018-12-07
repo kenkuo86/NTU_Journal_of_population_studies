@@ -9,7 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+
+
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <style>
         .bg-cover{
             background-size: cover;
@@ -20,6 +26,17 @@
         *{
             font-family: 'Noto Serif TC', serif;
         }
+
+        .logo{
+            width: 220px;
+            height: 45px;
+        }
+        .bg-purple{
+            background-color: #6B3091;
+        }
+
+
+
     </style>
     <title>人口學刊網站 - 國立台灣大學人口與性別研究中心</title>
 </head>
@@ -29,7 +46,9 @@
     <!-- Jimmy我只是先丟一個Navbar在這邊我比較方便看版面大概的樣子~~你之後再把它刪掉就好~~ -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#">人口學刊</a>
+
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/jps-logo5.png"></a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -38,7 +57,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
+
                         <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -61,13 +82,19 @@
                             <a class="dropdown-item" href="#">徵稿細則</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">歷年目錄</a>
-                    </li>
+                    </li>               
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">中心首頁</a>
+                    </li>      
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="搜尋" aria-label="搜尋">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+
                 </form>
             </div>
         </div>
@@ -91,8 +118,79 @@
             </div>
             <!-- index -->
             <div class="col-md-6 text-center">
-                <div class="card">
-                    <div class="card-header bg-purple text-white">
+
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header bg-purple text-white" id="headingOne">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link text-white" type="button" style="text-decoration: none;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">研究論文</button>
+                            </h3>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p>臺灣日治時期的家庭結構與分家現象－新竹四個街庄的分析</p>
+                                        <small>——李俊豪(Chun-Hao Li)；楊文山(Wen-Shan Yang)；莊英章(Ying-Chang Chuang)</small>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>臺灣樂齡學習需求人口與樂齡學習中心資源配置差異分析：應用空間群聚與地理可近性方法評估</p>
+                                        <small>——蔡明璋(Ming-Chang Tsai)；曾明性(Ming-Hseng Tseng)；吳慧卿(Hui-Ching Wu)</small>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p>高齡家庭與高齡照顧者的特性：2010年人口與住宅普查資料的應用</p>
+                                        <small>——劉千嘉(Chien-Chia Liu)</small>
+                                    </li>
+                                </ul>         
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header bg-purple" id="headingTwo">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link collapsed text-white" style="text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                學術活動紀實
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <p>衛生福利政策專題討論「我國人口政策與少子化因應策略之省思－移民政策的推動與再省思」學術活動紀實</p>
+                                    <small>——陳再晉；鐘珮純；陳冠文；林廷育</small>
+                                </li>
+                                <li class="list-group-item">
+                                    <p>「跨國婚姻的組成差異與生育影響：南韓與臺灣經驗」演講紀實</p>
+                                    <small>——呂采穎</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header bg-purple" id="headingThree">
+                            <h3 class="mb-0">
+                                <button class="btn btn-link collapsed text-white" style="text-decoration: none;" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">書評
+                                </button>
+                            </h3>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p>Book reviews: I'm Migrant: New Perspectives in the Studies of Oversea Chinese</p>
+                                        <small>——鄭得興(James Cheng)</small>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+<!--                 <div class="card">
+                    <div class="card-header">
+
                         <h3>研究論文</h3>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -135,8 +233,7 @@
                             <small>——鄭得興(James Cheng)</small>
                         </li>
                     </ul>
-                </div>
-            </div>
+                </div> -->
         </div>
     </div>
 
@@ -185,6 +282,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
