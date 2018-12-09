@@ -44,7 +44,6 @@
 
 <body>
     <!-- Navbar -->
-    <!-- Jimmy我只是先丟一個Navbar在這邊我比較方便看版面大概的樣子~~你之後再把它刪掉就好~~ -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
 
@@ -199,6 +198,7 @@
             </div>
         </div>
     </div>
+
     <!-- footer -->
     <div class="container-fluid bg-light py-4">
         <div class="container">
@@ -241,6 +241,47 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            let card_one_height = $("#collapseOne").outerHeight();
+            let card_two_height = $("#collapseTwo").outerHeight();
+
+            let position_one = $("#headingOne").offset().top;
+            let position_two = $("#headingTwo").offset().top - card_one_height;
+            let position_three = $("#headingThree").offset().top - card_two_height;
+
+            $(window).scroll(function () {
+                let scroll_top = $(window).scrollTop();
+                console.log(scroll_top, position_one, position_two, position_three);
+
+                // 第一個收第二個開
+                if (scroll_top > position_one && !$("#collapseOne").hasClass("inversed")) {
+                    $("#collapseOne").removeClass("show");
+                    $("#collapseOne").addClass("inversed");
+                    $("#collapseTwo").addClass("show");
+                }
+                // 往回捲動/滑
+                if (scroll_top < position_one && $("#collapseOne").hasClass("inversed")) {
+                    $("#collapseOne").addClass("show");
+                    $("#collapseOne").removeClass("inversed");
+                    $("#collapseTwo").removeClass("show");
+                }
+                // 第二個收第三個開
+                if (scroll_top > position_two && !$("#collapseTwo").hasClass("inversed")) {
+                    $("#collapseTwo").removeClass("show");
+                    $("#collapseTwo").addClass("inversed");
+                    $("#collapseThree").addClass("show");
+                }
+                // 往回捲動/滑
+                if (scroll_top < position_two && $("#collapseTwo").hasClass("inversed")) {
+                    $("#collapseTwo").addClass("show");
+                    $("#collapseTwo").removeClass("inversed");
+                    $("#collapseThree").removeClass("show");
+                }
+            });
+
+        });
+    </script>
 </body>
 
 </html>
