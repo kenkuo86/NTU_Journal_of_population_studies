@@ -12,10 +12,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
 
-
     <!-- Font awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
 
     <style>
         .bg-cover{
@@ -25,7 +25,7 @@
             background-color: #6b3091;
         }
         *{
-            font-family: 'Noto Serif TC', serif;
+            font-family: 'Noto Sans TC', sans-serif;
         }
 
         .logo{
@@ -35,8 +35,24 @@
         .bg-purple{
             background-color: #6B3091;
         }
-
-
+        .btn-outline-purple{
+            color: #6B3091;
+            background-color: transparent;
+            background-image: none;
+            border-color: #6B3091;
+            transition: 0.2s ease-in;
+        }
+        .btn-outline-purple:hover{
+            color: white;
+            background-color: #6B3091 ;
+        }
+        .badge-purple{
+            color: white;
+            background-color: #6B3091;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
 
     </style>
     <title>人口學刊網站 - 國立台灣大學人口與性別研究中心</title>
@@ -93,7 +109,7 @@
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="搜尋" aria-label="搜尋">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                    <button class="btn btn-outline-purple my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
 
                 </form>
             </div>
@@ -117,26 +133,26 @@
 
                 <div class="accordion" id="accordionExample">
                     <div class="card">
-                        <div class="card-header bg-purple text-white" id="headingOne">
+                        <div class="card-header bg-purple text-white rounded" id="headingOne">
                             <h3 class="mb-0">
                                 <button class="btn btn-link text-white" type="button" style="text-decoration: none;"
                                     data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">研究論文</button>
+                                    aria-controls="collapseOne"><span class="h5">研究論文</span></button>
                             </h3>
                         </div>
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                            <div class="card-body">
+                            <div class="card-body py-0">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-4">
                                         <p>臺灣日治時期的家庭結構與分家現象－新竹四個街庄的分析</p>
                                         <small>——李俊豪(Chun-Hao Li)；楊文山(Wen-Shan Yang)；莊英章(Ying-Chang Chuang)</small>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-4">
                                         <p>臺灣樂齡學習需求人口與樂齡學習中心資源配置差異分析：應用空間群聚與地理可近性方法評估</p>
                                         <small>——蔡明璋(Ming-Chang Tsai)；曾明性(Ming-Hseng Tseng)；吳慧卿(Hui-Ching Wu)</small>
                                     </li>
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-4">
                                         <p>高齡家庭與高齡照顧者的特性：2010年人口與住宅普查資料的應用</p>
                                         <small>——劉千嘉(Chien-Chia Liu)</small>
                                     </li>
@@ -146,22 +162,22 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-header bg-purple" id="headingTwo">
+                        <div class="card-header bg-purple rounded" id="headingTwo">
                             <h3 class="mb-0">
                                 <button class="btn btn-link collapsed text-white" style="text-decoration: none;" type="button"
                                     data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                     aria-controls="collapseTwo">
-                                    學術活動紀實
+                                    <span class="h5">學術活動紀實</span>
                                 </button>
                             </h3>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
+                                <li class="list-group-item py-4">
                                     <p>衛生福利政策專題討論「我國人口政策與少子化因應策略之省思－移民政策的推動與再省思」學術活動紀實</p>
                                     <small>——陳再晉；鐘珮純；陳冠文；林廷育</small>
                                 </li>
-                                <li class="list-group-item">
+                                <li class="list-group-item py-4">
                                     <p>「跨國婚姻的組成差異與生育影響：南韓與臺灣經驗」演講紀實</p>
                                     <small>——呂采穎</small>
                                 </li>
@@ -170,18 +186,18 @@
                     </div>
 
                     <div class="card">
-                        <div class="card-header bg-purple" id="headingThree">
+                        <div class="card-header bg-purple rounded" id="headingThree">
                             <h3 class="mb-0">
                                 <button class="btn btn-link collapsed text-white" style="text-decoration: none;" type="button"
                                     data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                    aria-controls="collapseThree">書評
+                                    aria-controls="collapseThree"><span class="h5">書評</span>
                                 </button>
                             </h3>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">
+                                    <li class="list-group-item py-4">
                                         <p>Book reviews: I'm Migrant: New Perspectives in the Studies of Oversea
                                             Chinese</p>
                                         <small>——鄭得興(James Cheng)</small>
@@ -193,7 +209,7 @@
                 </div>
             </div>
             <!-- image -->
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-3 d-none d-md-block">
                 <img class="img-fluid" src="./assets/cover.jpg" alt="期刊封面">
             </div>
         </div>
@@ -212,9 +228,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
-                    <!-- 因為人口學會的logo跟邊邊是切齊的，但人口與性別中心的logo本來就有留白，最好的方式是讓兩張圖可以留一樣的白，這樣程式碼可以比較一致 -->
-                    <div class="w-25"><img class="img-fluid" src="./assets/logo-PAT.png"
-                            alt="臺灣人口學會"></div>
+                    <div class="w-25"><img class="img-fluid" src="./assets/logo-PAT.png" alt="臺灣人口學會"></div>
                     <div class="w-75">
                         <div>臺灣人口學會<br>
                             Population Association of Taiwan</div>
@@ -223,11 +237,16 @@
             </div>
             <div class="d-flex justify-content-center">
                 <div class="text-center w-75">
-                    <small>
-                        國立臺灣大學人口與性別中心 Center for Population and Genfer Studies, National Taiwan University <br>
-                        10617 臺北市羅斯福路四段一號 No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.) <br><br>
-                        E-Mail: psc@ntu.edu.tw 電話總機(Phone)：02-3366-3400　傳真號碼(Fax) ：02-2363-9565
-                    </small>
+                    <span class="d-block d-md-inline"><span class="badge badge-purple mx-2" style="min-width: 101.823px">E-Mail</span><div class="d-inline-flex" style="min-width: 121.448px">psc@ntu.edu.tw</div></span>
+                    <span class="d-block d-md-inline"><span class="badge badge-purple mx-2" style="min-width: 101.823px">電話總機(Phone)</span><div class="d-inline-flex" style="min-width: 121.448px">02-3366-3400</div></span>
+                    <span class="d-block d-md-inline"><span class="badge badge-purple mx-2" style="min-width: 101.823px">傳真號碼(Fax)</span><div class="d-inline-flex" style="min-width: 121.448px">02-2363-9565</div></span>
+                    <div class="mt-3 mt-md-5">
+                        <small class="text-secondary">
+                            國立臺灣大學人口與性別中心 Center for Population and Genfer Studies, National Taiwan University <br>
+                            10617 臺北市羅斯福路四段一號 No. 1, Sec. 4, Roosevelt Rd., Taipei 10617, Taiwan (R.O.C.) <br><br>
+                        </small>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -241,7 +260,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <script>
+    <!-- <script>
         $(function () {
             let card_one_height = $("#collapseOne").outerHeight();
             let card_two_height = $("#collapseTwo").outerHeight();
@@ -256,32 +275,38 @@
 
                 // 第一個收第二個開
                 if (scroll_top > position_one && !$("#collapseOne").hasClass("inversed")) {
-                    $("#collapseOne").removeClass("show");
+                    $("#collapseOne").collapse("hide");
                     $("#collapseOne").addClass("inversed");
-                    $("#collapseTwo").addClass("show");
+                    // $("#collapseOne").addClass("o");
+                }
+                if (scroll_top > position_one) {
+                    $("#collapseTwo").collapse("show");
                 }
                 // 往回捲動/滑
-                if (scroll_top < position_one && $("#collapseOne").hasClass("inversed")) {
-                    $("#collapseOne").addClass("show");
-                    $("#collapseOne").removeClass("inversed");
-                    $("#collapseTwo").removeClass("show");
-                }
+                // if (scroll_top < position_one && $("#collapseOne").hasClass("inversed")) {
+                //     $("#collapseOne").collapse("show");
+                //     $("#collapseTwo").collapse("hide");
+                //     $("#collapseOne").removeClass("inversed");
+                // }
                 // 第二個收第三個開
-                if (scroll_top > position_two && !$("#collapseTwo").hasClass("inversed")) {
-                    $("#collapseTwo").removeClass("show");
+                if (scroll_top > position_two && !$("#collapseTwo").hasClass("inversed") && $("#collapesTwo").hasClass("show") && !$("#collapseThree").hasClass("show")) {
+                    $("#collapseTwo").collapse("hide");
+                    $("#collapseThree").collapse("show");
                     $("#collapseTwo").addClass("inversed");
-                    $("#collapseThree").addClass("show");
+                }
+                if (scroll_top > position_two && !$("#collapseTwo").hasClass("inversed")) {
+                    
                 }
                 // 往回捲動/滑
-                if (scroll_top < position_two && $("#collapseTwo").hasClass("inversed")) {
-                    $("#collapseTwo").addClass("show");
-                    $("#collapseTwo").removeClass("inversed");
-                    $("#collapseThree").removeClass("show");
-                }
+                // if (scroll_top < position_two && $("#collapseTwo").hasClass("inversed")) {
+                //     $("#collapseTwo").collapse("show");
+                //     $("#collapseThree").collapse("hide");
+                //     $("#collapseTwo").removeClass("inversed");
+                // }
             });
 
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
